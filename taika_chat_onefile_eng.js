@@ -849,106 +849,103 @@ document.head.appendChild(styleTastStyle)
 
 
 
-//Script from taika_index.js-----------------
 function checkMoment() {
-	if (typeof moment !== "undefined" && moment && moment.tz) {
-		if (initDelayTimeout) clearTimeout(initDelayTimeout);
-		EmbedTaikaChatCore.init('wss://connect.taikacompany.com/chat/socket', 'https://connect.taikacompany.com/static/res/', {
-			"sla": {
-				"silver": {
-					"time": 1,
-					"unit": "h",
-					"toggled": false,
-					"honorOffHours": false
-				},
-				"gold": {
-					"time": 30,
-					"unit": "m",
-					"toggled": false,
-					"honorOffHours": false
-				},
-				"platinum": {
-					"time": 1,
-					"unit": "m",
-					"toggled": false,
-					"honorOffHours": false
-				}
-			},
-			"email": {
-				"emailThread": true
-			},
-			"chat": {
-				"schedule": {
-					"ifClosed": "hideChat",
-					"showOpenTime": false
-				},
-				"customerSatisfaction": {
-					"toggled": true,
-					"scale": 5
-				},
-				"autoReply": {
-					"enabled": false,
-					"message": "",
-					"delay": 3
-				},
-				"window": {
-					"chatActions": [],
-					"chatHeaders": [],
-					"logo": null,
-					"customHeader": "Stromma Customer Service",
-					"backgroundColor": "000000",
-					"backgroundCustomColor": "dd052b",
-					"fontCustomColor": "FFFFFF",
-					"fontColor": "FFCC33"
-				},
-				"button": {
-					"gaps": {
-						"horizontal": {
-							"value": 25,
-							"unit": "px"
-						},
-						"vertical": {
-							"value": 3,
-							"unit": "%"
-						}
-					},
-					"ifNoAgents": "hideChat",
-					// "ifNoAgents": "keepChatOn",
-					"chatIcon": true,
-					"availableAgents": false,
-					"customText": " Chat ",
-					"textSize": "normal",
-					"cornerRadius": "20%/50%",
-					"color": "000000",
-					"customColor": "27A536",
-					"alignment": "bottom-right",
-					"fontCustomColor": "FFFFFF"
-				},
-				"questions": ["username"],
-				"welcomeText": "Welcome!\nHow can I help you?"
-			},
-			"task": {
-				"isShowAmount": false,
-				"isShowWorkTime": false
-			},
-			"departments": [],
-			"fields": [],
-			"playAlarm": true,
-			"disabled": false,
-			"canRemoveTicket": false,
-			"_id": "624fe4478bce913b2bdf0d14",
-			"channelType": "chat",
-			"department": "5b9a28a7a6308436a8b719ce",
-			"locale": "5ad84f719bd1787c7f30da94", // english
-			"__v": 0
-		});
-	} else {
-		var initDelayTimeout = setTimeout(checkMoment, 500);
-	}
+  if (typeof moment !== "undefined" && moment && moment.tz) {
+    if (initDelayTimeout) clearTimeout(initDelayTimeout);
+    EmbedTaikaChatCore.init('wss://connect.taikacompany.com/chat/socket', 'https://connect.taikacompany.com/static/res/', {
+      "sla": {
+        "silver": {
+          "time": 1,
+          "unit": "h",
+          "toggled": false,
+          "honorOffHours": false
+        },
+        "gold": {
+          "time": 30,
+          "unit": "m",
+          "toggled": false,
+          "honorOffHours": false
+        },
+        "platinum": {
+          "time": 1,
+          "unit": "m",
+          "toggled": false,
+          "honorOffHours": false
+        }
+      },
+      "email": {
+        "emailThread": true
+      },
+      "chat": {
+        "schedule": {
+          "showOpenTime": false,
+          "ifClosed": "keepChatOn"
+        },
+        "customerSatisfaction": {
+          "toggled": true,
+          "scale": 5
+        },
+        "autoReply": {
+          "enabled": false,
+          "message": "We have received your message please wait",
+          "delay": 3
+        },
+        "window": {
+          "logo": null,
+          "chatActions": [],
+          "chatHeaders": [],
+          "customHeader": "Trip Company",
+          "backgroundColor": "33AA44",
+          "backgroundCustomColor": "",
+          "fontColor": "F2F2F2"
+        },
+        "button": {
+          "gaps": {
+            "horizontal": {
+              "value": 30,
+              "unit": "px"
+            },
+            "vertical": {
+              "value": 10,
+              "unit": "%"
+            }
+          },
+          "chatIcon": false,
+          "availableAgents": false,
+          "customText": "",
+          "textSize": "normal",
+          "cornerRadius": "20%/50%",
+          "color": "33AA44",
+          "customColor": "",
+          "alignment": "bottom-right",
+          "ifNoAgents": "keepChatOn",
+          "fontColor": "F2F2F2"
+        },
+        "welcomeText": "Welcome to chat",
+        "questions": ["username"]
+      },
+      "task": {
+        "isShowAmount": false,
+        "isShowWorkTime": false
+      },
+      "_id": "624fe4478bce913b2bdf0d14",
+      "channelType": "chat",
+      "department": "5b9a28a7a6308436a8b719ce",
+      "departments": [],
+      "fields": [],
+      "locale": "5ad84f719bd1787c7f30da94",
+      "playAlarm": true,
+      "disabled": false,
+      "canRemoveTicket": false,
+      "__v": 0
+    });
+  } else {
+    var initDelayTimeout = setTimeout(checkMoment, 500);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
-	checkMoment()
+  checkMoment()
 })
 
 
