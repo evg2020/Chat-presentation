@@ -18,10 +18,6 @@ function checkMoment() {
   if (typeof moment !== "undefined" && moment && moment.tz) {
     if (initDelayTimeout) clearTimeout(initDelayTimeout);
     EmbedTaikaChatCore.init('wss://connect.taikacompany.com/chat/socket', 'https://connect.taikacompany.com/static/res/', {
-      "channelType": "chat",
-      "department": "5b9a28a7a6308436a8b719ce",
-      "departments": [],
-      "fields": [],
       "sla": {
         "silver": {
           "time": 1,
@@ -42,17 +38,14 @@ function checkMoment() {
           "honorOffHours": false
         }
       },
-      "locale": "5adf3a892e6cd316fb532e19",
       "email": {
         "emailThread": true
       },
       "chat": {
         "schedule": {
-          "ifClosed": "keepChatOn",
-          "showOpenTime": true
+          "showOpenTime": true,
+          "ifClosed": "keepChatOn"
         },
-        "welcomeText": "Welcome to chat",
-        "questions": ["username"],
         "customerSatisfaction": {
           "toggled": true,
           "scale": 5
@@ -71,15 +64,6 @@ function checkMoment() {
           "backgroundCustomColor": ""
         },
         "button": {
-          "chatIcon": false,
-          "availableAgents": false,
-          "ifNoAgents": "keepChatOn",
-          "textSize": "normal",
-          "cornerRadius": "100%",
-          "color": "000000",
-          "customColor": "",
-          "customText": "",
-          "alignment": "bottom-right",
           "gaps": {
             "horizontal": {
               "value": 10,
@@ -89,17 +73,33 @@ function checkMoment() {
               "value": 10,
               "unit": "%"
             }
-          }
-        }
+          },
+          "chatIcon": false,
+          "availableAgents": false,
+          "customText": "",
+          "textSize": "normal",
+          "cornerRadius": "100%",
+          "color": "000000",
+          "customColor": "",
+          "alignment": "bottom-right",
+          "ifNoAgents": "keepChatOn"
+        },
+        "welcomeText": "Welcome to chat",
+        "questions": ["username"]
       },
       "task": {
         "isShowAmount": false,
         "isShowWorkTime": false
       },
+      "_id": "624feeba6a5ffca6cc163523",
+      "channelType": "chat",
+      "department": "5b9a28a7a6308436a8b719ce",
+      "departments": [],
+      "fields": [],
+      "locale": "5ad84f719bd1787c7f30da94", //english
       "playAlarm": true,
       "disabled": false,
       "canRemoveTicket": false,
-      "_id": "624fe4478bce913b2bdf0d14",
       "__v": 0
     });
   } else {

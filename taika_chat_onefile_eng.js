@@ -936,10 +936,10 @@ function checkMoment() {
 			"playAlarm": true,
 			"disabled": false,
 			"canRemoveTicket": false,
-			"_id": "624bf02b7dcfd297defa5bc4",
+			"_id": "624feeba6a5ffca6cc163523",
 			"channelType": "chat",
-			"department": "605362c63511824edb2b98c0",
-			"locale": "5ad84f719bd1787c7f30da94",
+			"department": "5b9a28a7a6308436a8b719ce",
+			"locale": "5ad84f719bd1787c7f30da94", // english
 			"__v": 0
 		});
 	} else {
