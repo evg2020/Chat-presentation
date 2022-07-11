@@ -1,0 +1,472 @@
+.taika-chat-box {
+  width: 330px;
+  height: 450px;
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  /*line-height: 36px;*/
+  font-size: 11px;
+  z-index: 500;
+}
+
+.taika-chat-box-top {
+  width: 330px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #CCEEF9;
+  border-radius: 8px 8px 0 0;
+  background-color: #CCEEF9;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  /*line-height: 36px;*/
+  font-size: 14px;
+  z-index: 2;
+}
+
+.taika-chat-header-line {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.taika-chat-header-line-right {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 10px;
+  position: relative;
+  float: right;
+}
+
+.taika-chat-box-bottom {
+  width: 330px;
+  height: 415px;
+  border: 1px solid #DDDDDD;
+  border-top: 0;
+  /*border-left-width: 5px;*/
+  border-radius: 0 0 8px 8px;
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  /*line-height: 36px;*/
+  font-size: 11px;
+}
+
+.taika-chat-messages {
+  overflow-y: auto;
+  padding-top: 11px;
+  height: 280px;
+  width: 100%;
+}
+
+.taika-agent-message {
+  letter-spacing: 0;
+   line-height: 10px;
+   padding-bottom: 5px;
+   width: 85%;
+   margin-left: 40px;
+   margin-bottom: 10px;
+   display: table;
+   position: relative;
+   float: left;
+   border-style: solid;
+   border-radius: 10px 0px 10px 10px;
+   border-width: 10px 10px 0px 0px;
+   border-color:  #EDF9FF white white white;
+   background-color: #EDF9FF;
+   flex-direction: column;
+}
+
+.taika-agent-message > .message {
+  font-family: Helvetica;
+  line-height: 16px;
+  font-size: 12px;
+
+  color: rgba(0,0,0,0.90);
+  letter-spacing: 0;
+  display: table-cell;
+  width: 220px;
+  max-width: 230px;
+  position: middle;
+  vertical-align: top;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding-left: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.taika-user-message {
+  letter-spacing: 0;
+   line-height: 10px;
+   padding-bottom: 5px;
+   width: 85%;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   display: table;
+   position: relative;
+   float: left;
+   border-style: solid;
+   border-radius: 0px 10px 10px 10px;
+   border-width: 10px 0px 0px 10px;
+   border-color:  #EFEEEC white white white;
+   color: #EFEEEC;
+   background-color: #EFEEEC;
+   flex-direction: column;
+}
+
+.taika-user-message > .message {
+  font-family: Helvetica;
+  line-height: 16px;
+  font-size: 12px;
+  color: rgba(0,0,0,0.90);
+  letter-spacing: 0;
+  display: table-cell;
+  width: 230px;
+  max-width: 230px;
+  position: middle;
+  vertical-align: top;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding-left: 10px;
+  border: 0;
+  border-radius: 5px;
+
+}
+
+.taika-message-time {
+  color: grey;
+  display: table-cell;
+  position: middle;
+  vertical-align: bottom;
+  font-size: 8px;
+  padding: 0 5px;
+}
+
+.taika-input-area {
+  /*position: fixed;*/
+  position: relative;
+  bottom: 2px;
+  border-top: 1px solid #DDDDDD
+}
+
+.taika-send-button,
+.taika-fileshare-button
+{
+  width: 80px;
+  height: 25px;
+  border: 0;
+  border-radius: 10px;
+  float:right;
+  background-color: #33AA44;
+  color: #ffffff;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.taika-fileshare-button{
+  text-align: center;
+  padding-top: 5px;
+  height: 20px;
+  margin-right: 5px;
+}
+/* page 1*/
+.taika-chat-page-greeting {
+  padding-top: 10%;
+}
+.taika-chat-page1 { /*while there old style chat scripts*/
+  padding-top: 20%;
+}
+
+.taika-greeting-text {
+  font-family: Helvetica;
+  width: 230px;
+  margin-left: 16px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.taika-chat-page3 {
+  text-align: center;
+}
+.taika-greeting-closed {
+  display: inline-block;
+  font-family: Helvetica;
+  width: 230px;
+  /*background-color: red;*/
+  /*margin-top: 10px;*/
+  padding: 40px 10px 0 10px;
+  font-size: 18px;
+  text-align: left;
+}
+
+div.taika-chat-username {
+  padding-left: 25px;
+  margin-top: 30px;
+}
+
+div.taika-chat-questions {
+  padding-left: 25px;
+  margin-top: 30px;
+  overflow-y: auto;
+  /*height: 240px;*/
+}
+
+.taika-question-box > div {
+  word-break: break-all;
+  padding-bottom: 5px
+}
+
+.taika-answer {
+  width: 230px;
+  border-radius:5px;
+  padding: 5;
+}
+
+input.taika-chat-username {
+  width: 230px;
+  padding: 5px;
+  height: 30px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.taika-center {
+  text-align: center
+}
+
+.taika-start-button {
+  margin-top: 30px;
+  width: 100px;
+  height: 30px;
+  border: 0;
+  background-color: #33AA44;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.taika-chat-input {
+  /* width: 279px; */
+  border: 0;
+  height: 80px;
+  resize: none;
+  padding: 5px
+}
+
+.taika-chat-buttons {
+
+}
+#taika-file-upload{
+  display: none;
+}
+.taika-chat-menu {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin-right:15px;
+}
+
+.taika-file-info-panel{
+  float:left;
+  padding-left: 2px;
+}
+.taika-chat-menu:hover, .taika-chat-menu:focus {
+  background-color: #2980B9;
+}
+
+.taika-chat-logo {
+  width: 60px;
+  height: 20px
+}
+
+.taika-chat-title {
+  font-weight: bold;
+  vertical-align: middle;
+  width:65% !important;
+}
+
+.taika-chat-title.taika-no-logo {
+  height: 40px;
+  display: table-cell;
+  margin-left:10px;
+}
+
+
+.padded_placeholder::-webkit-input-placeholder {text-align: center; vertical-align: middle}
+.padded_placeholder:-moz-placeholder { /* Firefox 18- */text-align: center; vertical-align: middle}
+.padded_placeholder::-moz-placeholder {  /* Firefox 19+ */text-align: center; vertical-align: middle}
+.padded_placeholder:-ms-input-placeholder {text-align: center; vertical-align: middle}
+
+/* Dropdown Content (Hidden by Default) */
+.taika-chat-menu-list {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 80px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 2;
+  left:-40px;
+}
+
+/* Links inside the dropdown */
+.taika-chat-menu-list a {
+  text-align: left;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 2;
+}
+
+/* Change color of dropdown links on hover */
+.taika-chat-menu-list a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.taika-chat-status {
+  background-color: rgb(108, 117, 125);
+  color: rgb(255, 255, 255);
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.taika-chat-schedule {
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  z-index:1;
+  margin-top: -1px;
+  margin-left:-1px;
+  width: 99.8%
+}
+
+.taika-button-image {
+  width: 1em;
+  height: 1em;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+@media print {
+  .taika-agent-message  {width: 100%;}
+  .taika-agent-message > .message {width:100%}
+
+  .taika-user-message   {width: 100%;}
+  .taika-user-message > .message {width:100%}
+
+  .taika-message-time {vertical-align: top}
+}
+
+#wcs-smiley-dialog {
+  width:240px;
+  background-color: #FAFAFA;
+  color:black;
+  border-radius: 4px;
+  border: 1px solid #000;
+  font-size: 13px;
+  /* make sure it has the highest z-index */
+  position:absolute;
+  z-index:5000;
+  /* hide it by default */
+  display:none;
+}
+
+.wcs-smiley-title {
+  text-align: right;
+  background-color: #008CBA;
+}
+
+.wcs-smiley-close {
+  height: 100%;
+  text-align: right;
+  margin-right:5px;
+  color: white;
+  cursor: pointer;
+}
+.wcs-smiley-icon {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+
+.taika-numeric-dialog * i {
+  width: 10px;
+  height: 10px;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 1.5em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.taika-mark {
+  border: 1px solid rgb(231, 231, 231);
+}
+
+.taika-mark:active {
+  border: 1px solid rgb(231, 231, 231);
+  background-color: rgb(211, 211, 211);
+}
+
+.taika-mark:hover {
+  border-color: SlateBlue;
+}
+
+.taika-satisfaction-dialog {
+  color:black;
+  position: relative;
+  vertical-align: middle;
+  margin:10px 20px;
+  line-height: 20px;
+  padding: 30px 10px;
+  z-index: 10;
+  background-color: #F2F2F2;
+  border: 1px solid #C0E0F0;
+}
+
+.taika-joy-thumb-up {
+  position: relative;
+  margin: -5px 5px 5px 5px;
+}
+
+.taika-joy-thumb-up > i:hover {
+  color: darkgreen;
+  transform: scale(1.5) !important;
+}
+
+.taika-joy-thumb-down {
+  position: relative;
+  top: 7px;
+  margin: 5px 5px 5px 5px;
+}
+
+.taika-joy-thumb-down > i {
+  transform: scale(-1, 1)
+}
+
+.taika-joy-thumb-down > i:hover {
+  color: red;
+  transform: scale(-1.5, 1.5) !important;
+}
+
+.largerHover:hover {
+    transform: scale(1.5) !important;
+}
+
+.fa-2x {
+  font-size: 1.5em;
+}
+.taika-joy-mark{
+  font-size: 10px;
+  color: black;
+}

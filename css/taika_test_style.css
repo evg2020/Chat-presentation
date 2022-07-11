@@ -1,0 +1,338 @@
+/* ESECOM grey #303030 */
+/* ESECOM orange #FF9900 */
+
+/* TAIKA green #8bc00e */
+
+.wcs-height100 {
+  height: 100%;
+}
+.wcs-center {
+  margin: auto;
+}
+.wcs-action-icon {
+  height: 10;
+  cursor: pointer;
+  transition: background- 300ms ease-out;
+}
+.wcs-action-icon:hover, .wcs-action-icon:focus {
+  background-color: #F2F2F2;
+}
+.wcs-action-icon-rev {
+  height: 10;
+  cursor: pointer;
+  transition: background-color 300ms ease-out;
+}
+.wcs-action-icon-rev:hover, .wcs-action-icon-rev:focus,
+.taika-action-icon-rev:hover, .taika-action-icon-rev:focus{
+  background-color: #007095;
+}
+.wcs-minimized {
+  position: fixed;
+  bottom: 0;
+  right: 3px;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  width: 280px;
+  height: 36px;
+  font-size: 11px;
+}
+.wcs-maximized {
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  border-style: solid;
+  border-width: 0px 0px 0px 5px;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  width: 280px;
+  height: 450px;
+
+  /*line-height: 36px;*/
+  font-size: 11px;
+}
+
+.wcs-minimized-text {
+  position: relative;
+  top: 4px;
+  float: left;
+  cursor: pointer;
+  line-height: 15px;
+  text-align: left;
+}
+.wcs-maximized-text {
+  /*position: relative;*/
+  /*top: 4px;*/
+  /*float: left;*/
+  font-size: 13px;
+  line-height: 15px;
+  text-align: left;
+  color: #FAFAFA;
+}
+
+.wcs-chat-area {
+  height: 336px;
+  margin: 0px 5px 0px 5px;
+  color: black;
+}
+#wcs-chat-text {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  font-size: 12px;
+  line-height: 1.2;
+}
+#wcs-chat-text p {
+  margin: 0 0 5px;
+}
+
+.wcs-bottom {
+  height: 101px;
+  margin: 0px 5px 2px 0px;
+  color: black;
+}
+.wcs-send-box {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: hidden;
+  height: 36px;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+.wcs-send-text {
+  height: 36px;
+  width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  float:left;
+}
+#wcs-send-text {
+  height: auto;
+  min-height: 30px;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 0 0 0 0;
+  padding: 0px;
+  border:1px solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.wcs-question-text {
+  height: auto;
+  width: 250px;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 0 0 0 0;
+  padding: 3px;
+  border:1px solid;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#wcs-address-text {
+  height: auto;
+  width: 250px;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  font-size: 12px;
+  line-height: 1.2;
+}
+/*.wcs-send-button {
+  height: 36px;
+  width: 60px;
+  float: right;
+}*/
+
+#wcs-send-button {
+  height: 35px;
+  line-height: 35px;
+  width: 60px;
+  float: right;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  /*  margin: 5px, 5px, 1.25rem;
+    position: relative;*/
+  border-radius: 0px 5px 5px 5px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  display: inline-block;
+  padding: 0;
+  font-size: 0.9rem;
+  background-color: #008cba;
+  color: white;
+  transition: background-color 300ms ease-out;
+}
+#wcs-send-button:hover, #wcs-send-button:focus {
+  background-color: #007095;
+  color: white;
+}
+
+#wcs-counter-div {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+#wcs-power-div {
+  margin-top: 0px;
+  font-size: 10px;
+  z-index: 1000;
+  position: absolute;
+  margin-left: 145px;
+}
+
+#wcs-ese-logo {
+  width:40%;
+}
+
+
+/**/
+
+#wcs-print_dialog {
+  width: 230px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+.wcs-sound-level {
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.wcs-sound-level-container {
+  text-align: center;
+}
+.wcs-dialog-title,
+.taika-dialog-title {
+  height: 22px;
+  text-align: right;
+  background-color: lightgray;
+}
+.wcs-dialog-close,
+.taika-dialog-close{
+  height: 100%;
+  text-align: right;
+  margin-right:5px;
+  color: red;
+  cursor: pointer;
+}
+#wcs-sound-dialog,
+#taika-sound-dialog{
+  width:240px;
+  height:75px;
+  background-color: #FAFAFA;
+  color:black;
+  border-radius: 4px;
+  border: 1px solid #000;
+  font-size: 11px;
+  /* make sure it has the highest z-index */
+  position:absolute;
+  z-index:5000;
+  /* hide it by default */
+  display:none;
+}
+
+.taika-fileshare-button {
+  width: 80px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #33AA44;
+  color: #ffffff
+}
+
+.wcs-smiley-title {
+  text-align: right;
+  background-color: #008CBA;
+}
+.wcs-smiley-close {
+  height: 100%;
+  text-align: right;
+  margin-right:5px;
+  color: white;
+  cursor: pointer;
+}
+.wcs-smiley-icon,
+.taika-smiley-icon{
+  margin-left:15px;
+  margin-right:15px;
+  margin-top:15px;
+  margin-bottom:15px;
+  cursor: pointer;
+}
+#wcs-smiley-dialog {
+  width:240px;
+  background-color: #FAFAFA;
+  color:black;
+  border-radius: 4px;
+  border: 1px solid #000;
+  font-size: 13px;
+  /* make sure it has the highest z-index */
+  position:absolute;
+  z-index:5000;
+  /* hide it by default */
+  display:none;
+}
+
+#wcs-qutton-email-box {
+  width:230px;
+  border-radius: 4px;
+  background-color: #FAFAFA;
+  border: 1px solid #000;
+  font-size: 13px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#wcs-qutton-picture-box {
+  width:230px;
+  border-radius: 4px;
+  background-color: #FAFAFA;
+  border: 1px solid #000;
+  font-size: 13px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#wcs-email-textbox {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+#wcs-email-send-button {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+#wcs-mail_loader {
+  color:#000000;
+  float: right;
+  font-size: 20px;
+  display: none;
+}
+
+#wcs-send-picture {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  width: 100px;
+  display: block;
+}
+
+#wcs-new-message {
+  float: right;
+  font-size: 12px;
+}
+
+#submit_chat_file{
+  margin: 0;
+  height: 25px;
+}
+
