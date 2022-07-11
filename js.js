@@ -43,7 +43,7 @@ function checkMoment() {
       },
       "chat": {
         "schedule": {
-          "showOpenTime": true,
+          "showOpenTime": false,
           "ifClosed": "keepChatOn"
         },
         "customerSatisfaction": {
@@ -52,21 +52,22 @@ function checkMoment() {
         },
         "autoReply": {
           "enabled": false,
-          "message": "",
+          "message": "We have received your message please wait",
           "delay": 3
         },
         "window": {
           "logo": null,
           "chatActions": [],
           "chatHeaders": [],
-          "customHeader": "",
-          "backgroundColor": "000000",
-          "backgroundCustomColor": ""
+          "customHeader": "Trip Company",
+          "backgroundColor": "33AA44",
+          "backgroundCustomColor": "",
+          "fontColor": "F2F2F2"
         },
         "button": {
           "gaps": {
             "horizontal": {
-              "value": 10,
+              "value": 30,
               "unit": "px"
             },
             "vertical": {
@@ -78,11 +79,12 @@ function checkMoment() {
           "availableAgents": false,
           "customText": "",
           "textSize": "normal",
-          "cornerRadius": "100%",
-          "color": "000000",
+          "cornerRadius": "20%/50%",
+          "color": "33AA44",
           "customColor": "",
           "alignment": "bottom-right",
-          "ifNoAgents": "keepChatOn"
+          "ifNoAgents": "keepChatOn",
+          "fontColor": "F2F2F2"
         },
         "welcomeText": "Welcome to chat",
         "questions": ["username"]
@@ -91,12 +93,12 @@ function checkMoment() {
         "isShowAmount": false,
         "isShowWorkTime": false
       },
-      "_id": "624feeba6a5ffca6cc163523",
+      "_id": "624fe4478bce913b2bdf0d14",
       "channelType": "chat",
       "department": "5b9a28a7a6308436a8b719ce",
       "departments": [],
       "fields": [],
-      "locale": "5ad84f719bd1787c7f30da94", //english
+      "locale": "5ad84f719bd1787c7f30da94",
       "playAlarm": true,
       "disabled": false,
       "canRemoveTicket": false,
